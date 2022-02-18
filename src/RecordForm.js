@@ -14,8 +14,8 @@ function RecordForm({ record: initialRecord, notify }) {
     evt.preventDefault();
 
     const url = isAdd
-      ? "http://localhost:8080/records"
-      : `http://localhost:8080/records/${record.id}`;
+      ? "https://record-store-back-end.herokuapp.com/records"
+      : `https://record-store-back-end.herokuapp.com/records/${record.id}`;
     const method = isAdd ? "POST" : "PUT";
     const expectedStatus = isAdd ? 201 : 204;
 
